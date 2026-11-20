@@ -1,0 +1,7 @@
+body { background: #f5f7fb; }
+.card-stat .nilai { font-size: 1.5rem; font-weight: 700; }
+.table th { white-space: nowrap; }
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+}
