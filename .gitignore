@@ -1,0 +1,3 @@
+# jangan commit password database
+config/database.php
+kirim_github.bat
