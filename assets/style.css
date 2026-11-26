@@ -1,7 +1,61 @@
-body { background: #f5f7fb; }
-.card-stat .nilai { font-size: 1.5rem; font-weight: 700; }
-.table th { white-space: nowrap; }
-@media print {
-  .no-print { display: none !important; }
-  body { background: #fff; }
-}
+/* ===== Tampilan Kas Kelas: sederhana, bersih, mudah dibaca ===== */
+:root { --kk-biru: #2563eb; --kk-biru-tua: #1d4ed8; --kk-bg: #f4f6fb; --kk-teks: #1f2937; --kk-abu: #6b7280; }
+body { background: var(--kk-bg); color: var(--kk-teks); font-size: 1rem; }
+
+/* Navigasi */
+.navbar-kk { background: linear-gradient(90deg, var(--kk-biru-tua), var(--kk-biru)); box-shadow: 0 2px 8px rgba(37,99,235,.25); }
+.navbar-kk .navbar-brand { font-weight: 700; letter-spacing: .2px; }
+.navbar-kk .nav-link { color: rgba(255,255,255,.88); font-weight: 500; padding: .5rem .85rem; border-radius: .6rem; margin-right: .15rem; }
+.navbar-kk .nav-link:hover { background: rgba(255,255,255,.14); color: #fff; }
+.navbar-kk .nav-link.active { background: rgba(255,255,255,.22); color: #fff; }
+.navbar-kk .nav-link i { margin-right: .35rem; }
+.navbar-kk .dropdown-toggle { color: #fff; }
+
+/* Judul halaman */
+.page-head { margin-bottom: 1.25rem; }
+.page-head h1 { font-size: 1.55rem; font-weight: 700; margin: 0; }
+.page-head p { color: var(--kk-abu); margin: .15rem 0 0; }
+
+/* Kartu */
+.card { border: 0; border-radius: 14px; box-shadow: 0 1px 3px rgba(16,24,40,.08), 0 1px 2px rgba(16,24,40,.04); }
+.card-header { background: #fff; border-bottom: 1px solid #eef1f6; font-weight: 600; border-radius: 14px 14px 0 0 !important; padding: .85rem 1.1rem; }
+.stat-card .ikon { width: 52px; height: 52px; border-radius: 14px; display: grid; place-items: center; font-size: 1.5rem; flex: none; }
+.stat-card .label { color: var(--kk-abu); font-size: .88rem; }
+.stat-card .nilai { font-size: 1.55rem; font-weight: 700; line-height: 1.2; }
+.ikon-biru { background: #dbeafe; color: #1d4ed8; }
+.ikon-hijau { background: #dcfce7; color: #15803d; }
+.ikon-merah { background: #fee2e2; color: #b91c1c; }
+
+/* Tombol */
+.btn { border-radius: 10px; font-weight: 500; }
+.btn i { margin-right: .3rem; }
+.aksi-cepat .btn { padding: .65rem 1rem; }
+
+/* Tabel */
+.table { margin-bottom: 0; }
+.table thead th { background: #f8fafc; color: #475569; font-weight: 600; font-size: .86rem; border-bottom: 1px solid #e5e9f2; white-space: nowrap; }
+.table td, .table th { padding: .75rem 1rem; vertical-align: middle; }
+.table-hover tbody tr:hover { background: #f8faff; }
+.badge { font-weight: 600; padding: .45em .7em; border-radius: 8px; }
+.progress { height: 10px; border-radius: 8px; background: #e5e9f2; }
+.progress-bar { background: #16a34a; }
+
+/* Formulir */
+.form-control, .form-select { border-radius: 10px; padding: .6rem .8rem; }
+.form-label { font-weight: 600; font-size: .92rem; }
+.form-text { color: var(--kk-abu); }
+
+/* Kartu status anggota */
+.status-besar { display: flex; align-items: center; gap: 1rem; padding: 1.25rem; border-radius: 14px; }
+.status-besar .ikon-besar { font-size: 2.4rem; }
+.status-ok { background: #dcfce7; color: #166534; }
+.status-warn { background: #fef3c7; color: #92400e; }
+
+/* Halaman login */
+.login-bg { min-height: 100vh; display: flex; align-items: center; background: linear-gradient(160deg, #dbeafe, #f4f6fb 60%); }
+.login-card { max-width: 400px; width: 100%; margin: auto; }
+.login-logo { width: 64px; height: 64px; border-radius: 18px; background: var(--kk-biru); color: #fff; display: grid; place-items: center; font-size: 2rem; margin: 0 auto 1rem; }
+
+footer { color: var(--kk-abu); }
+@media (max-width: 576px) { .stat-card .nilai { font-size: 1.3rem; } .table td, .table th { padding: .6rem .7rem; } }
+@media print { .no-print { display: none !important; } body { background: #fff; } .card { box-shadow: none; } }
