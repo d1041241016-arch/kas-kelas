@@ -2,8 +2,8 @@
 
 Proyek UAS Pemrograman Web (individu) oleh **Fidela (D1041241016)**, Teknik Informatika, Universitas Tanjungpura.
 
-- Repository: https://github.com/<username>/kas-kelas
-- Laporan KP (Google Drive): <tempel link Drive di sini>
+- Repository: https://github.com/d1041241016-arch/kas-kelas
+- Laporan KP (Google Drive): https://docs.google.com/document/d/1daO-vkBV2-O-9pJM48VIvlUIfRfg-8P-/edit?usp=sharing&ouid=110774974150406332138&rtpof=true&sd=true
 
 ## Progres Milestone
 
