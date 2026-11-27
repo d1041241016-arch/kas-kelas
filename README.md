@@ -14,7 +14,9 @@ Proyek UAS Pemrograman Web (individu) oleh **Fidela (D1041241016)**, Teknik Info
 - [x] Menyiapkan lingkungan lokal Laragon dan mengimpor basis data
 
 ### Tahap 2
-- [ ] (isi saat dikerjakan)
+- [x] Membuat fitur CRUD anggota, periode iuran, pembayaran, dan pengeluaran dengan pembatasan akses per peran
+- [x] Membuat dashboard, laporan kas (filter dan ekspor CSV), riwayat iuran anggota, dan ubah password
+- [x] Deploy website dan basis data ke hosting InfinityFree: http://kaskelas-fidela.lovestoblog.com
 
 ### Tahap akhir
 - [ ] (isi saat dikerjakan)
