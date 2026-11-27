@@ -19,7 +19,7 @@ render_header('Halo, ' . ($_SESSION['nama'] ?? ''), 'Ringkasan kas kelas saat in
 </div>
 
 <?php if (is_bendahara()):
-    $rekap = pdo()->query('SELECT * FROM v_rekap_iuran_periode ORDER BY jatuh_tempo DESC')->fetchAll(); ?>
+    $rekap = pdo()->query('SELECT * FROM (' . SQL_REKAP . ') AS r ORDER BY jatuh_tempo DESC')->fetchAll(); ?>
 
   <div class="card mb-4 no-print"><div class="card-body">
     <div class="fw-semibold mb-2">Mau melakukan apa?</div>

@@ -3,7 +3,7 @@ require_once __DIR__ . '/../includes/auth.php';
 require_once __DIR__ . '/../includes/layout.php';
 wajib_bendahara();
 
-$rows = pdo()->query('SELECT * FROM v_rekap_iuran_periode ORDER BY jatuh_tempo DESC')->fetchAll();
+$rows = pdo()->query('SELECT * FROM (' . SQL_REKAP . ') AS r ORDER BY jatuh_tempo DESC')->fetchAll();
 render_header('Periode Iuran', 'Atur besar iuran dan batas waktu bayar untuk setiap periode.');
 ?>
 <a href="form.php" class="btn btn-primary mb-3"><i class="bi bi-calendar-plus"></i>Tambah Periode</a>

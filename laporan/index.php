@@ -15,7 +15,7 @@ if ($dari)   { $where[] = 'tanggal >= ?'; $par[] = $dari; }
 if ($sampai) { $where[] = 'tanggal <= ?'; $par[] = $sampai; }
 $sqlWhere = $where ? 'WHERE ' . implode(' AND ', $where) : '';
 
-$q = pdo()->prepare("SELECT tanggal, jenis, uraian, jumlah FROM v_laporan_kas $sqlWhere ORDER BY tanggal, jenis");
+$q = pdo()->prepare("SELECT tanggal, jenis, uraian, jumlah FROM (" . SQL_LAPORAN . ") AS l $sqlWhere ORDER BY tanggal, jenis");
 $q->execute($par);
 $rows = $q->fetchAll();
 
